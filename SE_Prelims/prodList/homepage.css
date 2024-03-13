@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+body{
+    
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        background-color:#2375da;
+
+      
+}
+
+.container{
+    width: 900px;
+    max-width: 90vw;
+    margin:auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+
+svg{
+    width: 30px;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+
+header .icon-cart{
+    position: relative;
+}
+
+
+header .icon-cart span {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(32, 5, 5);
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+}
+
+
+
+
+.ListProduct .item img{
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+
+}
+.ListProduct{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
+
+.ListProduct .item{
+    background-color: rgb(176, 59, 176);
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+
+.ListProduct .item h2{
+    font-weight: 600;
+    font-size: large;
+
+}
+.ListProduct .item .price{
+    letter-spacing: 2px;
+    font-size: small;
+}
+
+.ListProduct .item button{
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+.cartTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    inset: 0 -400px 0 auto;
+    grid-template-rows: 70px 3fr 70px;
+    transition: 0.5s;
+
+}
+body.showcart .cartTab{
+    inset: 0 0 0 auto;
+
+}
+
+body .showcart .container{
+    transform: translateX(-250px);
+}
+
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.quantity{
+    margin-top: -7.5rem;
+    padding-left: 19rem;
+}
+
+
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 523px;
+    
+}
+.cartTab .btn button{
+    background-color: #eee;
+    border: none;
+    font-family: Poppins; 
+    font-weight: 500;
+    cursor: pointer;
+    width: auto;
+}
+.cartTab .btn .btnExit{
+    background-color: #f80707;
+}
+
+.cartTab .listCart {
+    display: grid;
+    grid-template-columns: 100px 130px 2fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+.cartTab .listCart .item img{
+    width: 100%;
+   
+
+}
+.cartTab .listCart .item {
+  display: grid;
+  grid-template-columns: 100px 3fr 65px 50px; 
+  gap: 5px;
+  text-align: center;
+  align-items: center;
+}
+
+
+.cartTab .listCart .totalPrice,
+.cartTab .listCart .quantity {
+  display: grid;
+  gap: 3px;
+  grid-template-columns: 10px;
+}
+
+
+
+.cartTab .listCart .name{
+    display: grid;
+    gap: 3px;
+    grid-template-columns: 50px;
+}
+
+.cart .listCart .totalPrice{
+    display: grid;
+    gap: 3px;
+    grid-template-columns:50px;
+}
+
+.cartTab .listCart .quantity {
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.listCart .quantity span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  color: #555;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+
+.listCart .quantity span:nth-child(2) {
+  background-color: transparent;
+  color: #eee;
+}
+
+
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+
+}
+
+
+.listCart{
+    overflow: auto;
+
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+
+}
+
+.totalPrice{
+    display: grid;
+    grid-template-columns: 200px;
+    padding-right: rem;
+}
+
+
+ .btn {
+    margin-top: 1000px;
+    width: 100%;
+    padding: 10px;
+   
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 1000px;
+    cursor: pointer;
+} 
+
+.close {
+    background-color: #e74c3c;
+    color: #a21c1c;
+}
+
+.checkOut {
+    background-color: #2ecc71;
+    color: #992b2b;
+} 

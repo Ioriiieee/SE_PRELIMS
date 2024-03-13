@@ -1,0 +1,81 @@
+/* Add this CSS for the registration form */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-form h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-form .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(90, 31, 92, 0.8); /* Adjusted background color with transparency */
+    margin: 15px 0; /* Adjusted margin */
+}
+
+.register-form input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.register-form input::placeholder {
+    color: #fff;
+}
+
+.register-form i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.register-form .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, -1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.register-form .login-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-form .login-link p a {
+    color: #fff;
+}
+
+/* Adjust the background image for the registration form */
+.register-form {
+    background-image: url('C:\Users\DELL\OneDrive\Desktop'); /* Change the path to your image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+/* If needed, adjust other styles specific to your registration form */
+
